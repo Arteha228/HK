@@ -13,22 +13,32 @@
     <meta property="og:description" content="Чи зможеш ти здолати Absolute Radiance? Перевір свій статус мисливця.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="Hk_radiance.webp"> 
+    
     <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CHZD44BL29"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CHZD44BL29');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHZD44BL29"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CHZD44BL29');
+    </script>
 </head>
 <body>
 
     <header class="header">
+        <!-- Кнопка-перехідник на другу частину у верхньому правому кутку -->
+        <div class="header-bridge">
+            <a href="index.html" class="bridge-btn">
+                ➔ Silksong (Pharloom)
+            </a>
+        </div>
+
         <h1 class="header__title">Зала Богів</h1>
         <p class="header__subtitle">Випробування для тих, хто зібрав 164 записи в Журналі</p>
+        
         <nav class="nav">
             <ul class="nav__list">
                 <li><a href="#about" class="nav__link">Про Пантеон</a></li>
@@ -40,12 +50,12 @@
     
     <main class="main">
         <article id="about" class="section">
-            <h2 class="section__title">Про випробування</h2>
-            <p class="section__text">Тут зібрані істоти, що зупинили тисячі забігів у Божому Крові. Кожен із них вимагає ідеальної реакції та знання таймінгів.</p>
+            <h2 class="header__title section-heading-custom">Про випробування</h2>
+            <p class="section__text text-custom">Тут зібрані істоти, що зупинили тисячі забігів у Божому Крові. Кожен із них вимагає ідеальної реакції та знання таймінгів.</p>
         </article>
         
         <section id="gallery" class="section">
-            <h2 class="section__title">Четвірка Найсильніших</h2>
+            <h2 class="header__title section-heading-gallery">Четвірка Найсильніших</h2>
             <div class="grid">
                 <figure class="boss-card">
                     <img src="Hk_radiance.webp" alt="Бос Absolute Radiance у Залі Богів" loading="lazy">
@@ -67,15 +77,15 @@
         </section>
         
         <section id="contact" class="section">
-            <h2 class="section__title">Скріпити печатку</h2>
+            <h2 class="header__title section-heading-custom">Скріпити печатку</h2>
             <form action="#" method="post" class="form">
-                <label for="name">Ім'я:</label>
+                <label for="name" class="form-label">Ім'я:</label>
                 <input type="text" id="name" name="name" placeholder="Наприклад: Artem" required>
                 
-                <label for="email">Email:</label>
+                <label for="email" class="form-label">Email:</label>
                 <input type="email" id="email" name="email" placeholder="mail@example.com" required>
                 
-                <label for="message">Порада:</label>
+                <label for="message" class="form-label">Порада:</label>
                 <textarea id="message" name="message" placeholder="Ваша стратегія..." required></textarea>
                 
                 <button type="submit" class="btn">Надіслати Мисливцю</button>

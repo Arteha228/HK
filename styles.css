@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +12,68 @@ body {
     text-align: center;
 }
 
-
 .header {
     background: linear-gradient(135deg, #0a1128 0%, #1c2541 100%);
     padding: 3rem 1rem;
     border-bottom: 2px solid #3a506b;
+    position: relative; /* Необхідно для позиціонування кнопки у правому кутку */
+}
+
+/* Стилі для фіксації кнопки-перехідника у верхньому правому кутку */
+.header-bridge {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 10;
+}
+
+.bridge-btn {
+    color: #a0e0ff;
+    border: 1px solid #3a506b;
+    background-color: #0d121d;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.bridge-btn:hover {
+    background-color: #1c2541;
+    color: #ffffff;
+    border-color: #a0e0ff;
+    box-shadow: 0 0 10px rgba(160, 224, 255, 0.4);
 }
 
 .header__title {
     font-size: 2.5rem;
     color: #a0e0ff;
     text-shadow: 0 0 15px rgba(160, 224, 255, 0.5);
+}
+
+/* Допоміжні класи для кастомних відступів та заголовків */
+.section-heading-custom {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.section-heading-gallery {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.text-custom {
+    color: #d1ccc0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .nav__list {
@@ -46,7 +96,6 @@ body {
     color: #ffffff;
     border-bottom: 1px solid #a0e0ff;
 }
-
 
 .grid {
     display: flex;
@@ -82,7 +131,6 @@ body {
     font-weight: bold;
     color: #a0e0ff;
 }
-
 
 .form {
     background: #0d121d;
